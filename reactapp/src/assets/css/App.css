@@ -4,7 +4,6 @@
 }
 h1 {
   background-color: rgb(232, 247, 247);
-  height: 100vh;
 }
 .container {
   width: 100%;
@@ -16,16 +15,26 @@ h1 {
   height: 100%;
   display: flex;
   flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.first p {
+  margin: 5px;
+  font-weight: bolder;
 }
 .sec {
   width: 100%;
   height: 100%;
   display: flex;
   flex: 1;
+  justify-content: center;
+  align-items: center;
 }
 img {
-  width: 500px;
-  height: 300px;
+  width: 80%;
+  height: 35%;
+  border-radius: 10px;
 }
 .header {
   display: flex;
@@ -33,10 +42,38 @@ img {
   height: 8%;
   align-items: center;
   padding: 10px;
-  
 }
 .header img {
   width: 60px;
   height: 50px;
   margin-right: 10px;
+}
+.formcard {
+  width: 70%;
+  height: 60%;
+  border-radius: 20px;
+  box-shadow: 10px 10px 40px 1px black;
+  padding: 10px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.formcard div h2 {
+  text-align: center;
+}
+.formcard div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.formcard input {
+  margin-top: 8px;
+  width: 100%;
+  height: 24px;
+}
+.formcard label {
 }

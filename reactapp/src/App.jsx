@@ -1,5 +1,6 @@
+import React from "react";
 import HP from "./component/HP.jsx";
-import Header from "./component/Header.jsx";
+import Header from "./component/header.jsx";
 
 function App() {
 
