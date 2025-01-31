@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function HP() {
   return (
@@ -14,11 +15,7 @@ function HP() {
       <div className="sec">
         <div className="formcard">
           <div>
-            <h2>Register</h2>
-          </div>
-          <div>
-            <label>Name</label>
-            <input type="text" placeholder="Enter your name" required />
+            <h2>Log-In</h2>
           </div>
           <div>
             <label>Email</label>
@@ -29,15 +26,12 @@ function HP() {
             <input type="password" placeholder="Enter your password" required />
           </div>
           <div>
-            <label>Confarm Password</label>
-            <input
-              type="password"
-              placeholder="Confarm your password"
-              required
-            />
+            <button>Login</button>
           </div>
           <div>
-            <button>Submit</button>
+            <span>
+              Not a user ?<Link to="/register">Register</Link>
+            </span>
           </div>
         </div>
       </div>

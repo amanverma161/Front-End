@@ -1,17 +1,19 @@
 import React from "react";
 import HP from "./component/HP.jsx";
-import Header from "./component/header.jsx";
+import { Route, Routes } from "react-router-dom";
+import Register from "./component/Register.jsx";
 
 function App() {
-
   return (
     <>
       <div>
-        <Header />
-        <HP />
+        <Routes>
+          <Route path="/" element={<HP />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
