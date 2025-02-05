@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import img from "./a.svg";
-function HP() {
+import img from "../assets/img/svg.svg";
+
+function Dashboard() {
   const navigate = useNavigate();
   const [inputs, setInputs] = useState({});
   const [error, setError] = useState(false);
@@ -22,14 +23,13 @@ function HP() {
   return (
     <div className="container">
       <div className="first">
-        <p>Welcome to React App</p>
-        <p>To track the React Code...</p>
+        <p>Please add your code...</p>
         <img src={img} alt="" />
       </div>
       <div className="sec">
         <div className="formcard">
           <div>
-            <h2>Log-In</h2>
+            <h2>Add Code...</h2>
           </div>
           <form onSubmit={doLogin}>
             <div>
@@ -76,4 +76,4 @@ function HP() {
   );
 }
 
-export default HP;
+export default Dashboard;
